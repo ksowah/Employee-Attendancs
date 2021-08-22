@@ -3,10 +3,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+// Main class
 public class Main {
 
     String name;
-
+    
+    
+    // This template method is reused in other classes
     public void template(){
 
         System.out.println("Please enter full name: ");
@@ -15,7 +18,9 @@ public class Main {
         name = employeeName.nextLine();
 
     }
-
+    
+    
+     /* This class contains a method that prints the actual date and time*/   
     class TakeData extends Main{
 
         public void data(){
