@@ -33,8 +33,8 @@ public class Main {
 
 
         try{
-            FileWriter employee = new FileWriter(name + ".txt");
-            employee.write(name + " was present on " + "'" +date +"'"+ " at exactly " + "'" +theTime + "'");
+            FileWriter employee = new FileWriter(/* ENTER FILE PATH HERE (IN QUOTES) */+ name + ".txt");
+            employee.write(name + " was present on " + "'" + date +"'"+ " at exactly " + "'" +theTime + "'");
             employee.close();
             System.out.println("Submission received");
 
@@ -89,7 +89,7 @@ public class Main {
             Scanner takeResponse = new Scanner(System.in);
             response = takeResponse.nextInt();
 
-            // conditiona statement to put users in control of the program
+            // conditional statement to put users in control of the program
             if (response == 1){
 
                 Main parent = new Main();
