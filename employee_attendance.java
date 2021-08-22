@@ -48,6 +48,8 @@ public class Main {
         }
     }
 
+    
+    /* This class contains a method that allows users to view their date and time */
     class Check extends Main{
 
         public void checkTime(){
@@ -87,6 +89,7 @@ public class Main {
             Scanner takeResponse = new Scanner(System.in);
             response = takeResponse.nextInt();
 
+            // conditiona statement to put users in control of the program
             if (response == 1){
 
                 Main parent = new Main();
