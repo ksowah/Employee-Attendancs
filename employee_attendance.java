@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Third {
+public class Main {
 
     String name;
 
@@ -16,7 +16,7 @@ public class Third {
 
     }
 
-    class TakeData extends Third{
+    class TakeData extends Main{
 
         public void data(){
 
@@ -43,7 +43,7 @@ public class Third {
         }
     }
 
-    class Check extends Third{
+    class Check extends Main{
 
         public void checkTime(){
 
@@ -84,15 +84,15 @@ public class Third {
 
             if (response == 1){
 
-                Third parent = new Third();
-                Third.TakeData collectData = parent.new TakeData();
+                Main parent = new Main();
+                Main.TakeData collectData = parent.new TakeData();
                 collectData.template();
                 collectData.data();
 
             }else if (response == 0){
 
-                Third parent = new Third();
-                Third.Check checkData = parent.new Check();
+                Main parent = new Main();
+                Main.Check checkData = parent.new Check();
                 checkData.template();
                 checkData.checkTime();
 
